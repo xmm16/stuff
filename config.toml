@@ -1,0 +1,13 @@
+[build]
+incremental = false
+
+[http]
+ssl-version = "tlsv1.3"
+
+[profile.release]
+incremental = false
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+overflow-checks = true
+strip = true
